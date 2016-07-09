@@ -1,0 +1,75 @@
+package gdsmartcard.io.winscard;
+
+import com.sun.jna.platform.win32.WinDef.LONG;
+
+public abstract class WinSCardStatus {
+
+    public static final LONG SCARD_E_BAD_SEEK = new LONG(0x80100029);
+    public static final LONG SCARD_E_CANCELLED = new LONG(0x80100002);
+    public static final LONG SCARD_E_CANT_DISPOSE = new LONG(0x8010000E);
+    public static final LONG SCARD_E_CARD_UNSUPPORTED = new LONG(0x8010001C);
+    public static final LONG SCARD_E_CERTIFICATE_UNAVAILABLE = new LONG(0x8010002D);
+    public static final LONG SCARD_E_COMM_DATA_LOST = new LONG(0x8010002F);
+    public static final LONG SCARD_E_DIR_NOT_FOUND = new LONG(0x80100023);
+    public static final LONG SCARD_E_DUPLICATE_READER = new LONG(0x8010001B);
+    public static final LONG SCARD_E_FILE_NOT_FOUND = new LONG(0x80100024);
+    public static final LONG SCARD_E_ICC_CREATEORDER = new LONG(0x80100021);
+    public static final LONG SCARD_E_ICC_INSTALLATION = new LONG(0x80100020);
+    public static final LONG SCARD_E_INSUFFICIENT_BUFFER = new LONG(0x80100008);
+    public static final LONG SCARD_E_INVALID_ATR = new LONG(0x80100015);
+    public static final LONG SCARD_E_INVALID_CHV = new LONG(0x8010002A);
+    public static final LONG SCARD_E_INVALID_HANDLE = new LONG(0x80100003);
+    public static final LONG SCARD_E_INVALID_PARAMETER = new LONG(0x80100004);
+    public static final LONG SCARD_E_INVALID_TARGET = new LONG(0x80100005);
+    public static final LONG SCARD_E_INVALID_VALUE = new LONG(0x80100011);
+    public static final LONG SCARD_E_NO_ACCESS = new LONG(0x80100027);
+    public static final LONG SCARD_E_NO_DIR = new LONG(0x80100025);
+    public static final LONG SCARD_E_NO_FILE = new LONG(0x80100026);
+    public static final LONG SCARD_E_NO_KEY_CONTAINER = new LONG(0x80100030);
+    public static final LONG SCARD_E_NO_MEMORY = new LONG(0x80100006);
+    public static final LONG SCARD_E_NO_PIN_CACHE = new LONG(0x80100033);
+    public static final LONG SCARD_E_NO_READERS_AVAILABLE = new LONG(0x8010002E);
+    public static final LONG SCARD_E_NO_SERVICE = new LONG(0x8010001D);
+    public static final LONG SCARD_E_NO_SMARTCARD = new LONG(0x8010000C);
+    public static final LONG SCARD_E_NO_SUCH_CERTIFICATE = new LONG(0x8010002C);
+    public static final LONG SCARD_E_NOT_READY = new LONG(0x80100010);
+    public static final LONG SCARD_E_NOT_TRANSACTED = new LONG(0x80100016);
+    public static final LONG SCARD_E_PCI_TOO_SMALL = new LONG(0x80100019);
+    public static final LONG SCARD_E_PIN_CACHE_EXPIRED = new LONG(0x80100032);
+    public static final LONG SCARD_E_PROTO_MISMATCH = new LONG(0x8010000F);
+    public static final LONG SCARD_E_READ_ONLY_CARD = new LONG(0x80100034);
+    public static final LONG SCARD_E_READER_UNAVAILABLE = new LONG(0x80100017);
+    public static final LONG SCARD_E_READER_UNSUPPORTED = new LONG(0x8010001A);
+    public static final LONG SCARD_E_SERVER_TOO_BUSY = new LONG(0x80100031);
+    public static final LONG SCARD_E_SERVICE_STOPPED = new LONG(0x8010001E);
+    public static final LONG SCARD_E_SHARING_VIOLATION = new LONG(0x8010000B);
+    public static final LONG SCARD_E_SYSTEM_CANCELLED = new LONG(0x80100012);
+    public static final LONG SCARD_E_TIMEOUT = new LONG(0x8010000A);
+    public static final LONG SCARD_E_UNEXPECTED = new LONG(0x8010001F);
+    public static final LONG SCARD_E_UNKNOWN_CARD = new LONG(0x8010000D);
+    public static final LONG SCARD_E_UNKNOWN_READER = new LONG(0x80100009);
+    public static final LONG SCARD_E_UNKNOWN_RES_MNG = new LONG(0x8010002B);
+    public static final LONG SCARD_E_UNSUPPORTED_FEATURE = new LONG(0x80100022);
+    public static final LONG SCARD_E_WRITE_TOO_MANY = new LONG(0x80100028);
+    public static final LONG SCARD_F_COMM_ERROR = new LONG(0x80100013);
+    public static final LONG SCARD_F_INTERNAL_ERROR = new LONG(0x80100001);
+    public static final LONG SCARD_F_UNKNOWN_ERROR = new LONG(0x80100014);
+    public static final LONG SCARD_F_WAITED_TOO_LONG = new LONG(0x80100007);
+    public static final LONG SCARD_P_SHUTDOWN = new LONG(0x80100018);
+    public static final LONG SCARD_S_SUCCESS = new LONG(0);
+    public static final LONG SCARD_W_CANCELLED_BY_USER = new LONG(0x8010006E);
+    public static final LONG SCARD_W_CACHE_ITEM_NOT_FOUND = new LONG(0x80100070);
+    public static final LONG SCARD_W_CACHE_ITEM_STALE = new LONG(0x80100071);
+    public static final LONG SCARD_W_CACHE_ITEM_TOO_BIG = new LONG(0x80100072);
+    public static final LONG SCARD_W_CARD_NOT_AUTHENTICATED = new LONG(0x8010006F);
+    public static final LONG SCARD_W_CHV_BLOCKED = new LONG(0x8010006C);
+    public static final LONG SCARD_W_EOF = new LONG(0x8010006D);
+    public static final LONG SCARD_W_REMOVED_CARD = new LONG(0x80100069);
+    public static final LONG SCARD_W_RESET_CARD = new LONG(0x80100068);
+    public static final LONG SCARD_W_SECURITY_VIOLATION = new LONG(0x8010006A);
+    public static final LONG SCARD_W_UNPOWERED_CARD = new LONG(0x80100067);
+    public static final LONG SCARD_W_UNRESPONSIVE_CARD = new LONG(0x80100066);
+    public static final LONG SCARD_W_UNSUPPORTED_CARD = new LONG(0x80100065);
+    public static final LONG SCARD_W_WRONG_CHV = new LONG(0x8010006B);
+
+}
